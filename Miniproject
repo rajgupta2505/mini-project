@@ -1,0 +1,52 @@
+#include <stdio.h>
+
+int main() {
+    printf("         ----GOKUL DAIRY----\n\n");
+    char n[10];
+    printf("Name of Customer: ");
+    scanf("%s",&n);
+    printf("\nHello '%s' what you wish to Order!?\n\n",n);
+    printf("-----------------------------------------------------------\n\n");
+   
+    int item=0;
+    printf("Enter the number of your choice from our MENU :\n\n 1.Milk, Rs 60/lit \n 2.Butter, Rs 129/kg \n 3.Fresh Cream, Rs 179/kg \n 4.Panner, Rs 300/kg \n 5.Lassi, Rs 20/glass \n\n");
+    scanf("%d",&item);
+    float quantity=0;
+    printf("\nHow much Quantity of item you want(in kg/lit)= ");
+    scanf("%f",&quantity);
+    printf("\nOrder for %f kg/lit of item is placed..\n\n",quantity);
+    
+    switch(item)
+    {
+    case 1:printf("Order Successful for Milk!!\n\n"); break;
+    case 2:printf("Order Successful for Butter!!\n\n"); break;
+    case 3:printf("Order Successful for Fresh cream!!\n\n"); break;
+    case 4:printf("Order Successful for Paneer!!\n\n"); break;
+    case 5:printf("Order Successful for Lassi!!\n\n"); break;
+    default: printf("Invalid Option of Order!!\n\n"); break;
+
+    }
+    
+    printf("-----------------------------------------------------------\n\n");
+    
+    if (quantity<=2)
+    {
+        printf("oops SORRY!! You are not eligible for Discount :(\n\n");
+    }
+    if (quantity>2 && quantity<=5)
+    {
+        printf("CONGRATULATION !! you availed the Discount of 10%% on your Purchase :)\n\n");
+    }
+    if (quantity>5 && quantity<=10)
+    {
+        printf("CONGRATULATION !! you availed the Discount of 20%% on your Purchase :)\n\n");
+    }
+    if (quantity>10 )
+    {
+        printf("CONGRATULATION !! you availed the Discount of 25%% on your Purchase :)\n\n");
+    }
+    
+    printf("             ----STAY HEALTY AND HAPPY SHOPPING :)----\n\n\n");
+    
+    return 0;
+}
