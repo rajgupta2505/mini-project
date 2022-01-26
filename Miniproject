@@ -4,8 +4,8 @@ int main() {
     printf("         ----GOKUL DAIRY----\n\n");
     char n[10];
     printf("Name of Customer: ");
-    scanf("%s",&n);
-    printf("\nHello '%s' what you wish to Order!?\n\n",n);
+    scanf("%s",n);
+    printf("\nHello '%s' what do you wish to Order!?\n\n",n);
     printf("-----------------------------------------------------------\n\n");
    
     int item=0;
@@ -14,7 +14,7 @@ int main() {
     float quantity=0;
     printf("\nHow much Quantity of item you want(in kg/lit)= ");
     scanf("%f",&quantity);
-    printf("\nOrder for %f kg/lit of item is placed..\n\n",quantity);
+    printf("\nOrder for %.2f kg/lit of item is placed..\n\n",quantity);
     
     switch(item)
     {
@@ -47,6 +47,7 @@ int main() {
     }
     
     printf("             ----STAY HEALTY AND HAPPY SHOPPING :)----\n\n\n");
+    printf("             ----KEEP SAFE DISTANCE FOR COVID RESISTANCE :)----\n\n\n");
     
     return 0;
 }
